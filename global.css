@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #1e1e1e;
+    background-color: #fff;
     color: #FFF;
     font-family: Arial;
     font-size: 15px;
@@ -9,7 +9,7 @@ body {
     line-height: 21px; /* 140% */
     overflow-x: hidden;
   }
-  
+
   h1,
   h2,
   h3,
