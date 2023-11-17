@@ -1,0 +1,133 @@
+.header {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.header__title {
+    align-self: center;
+    margin-bottom: -1px;
+    transition: all 0.7s;
+}
+
+.header__title:hover {
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    list-style: none;
+}
+
+.pre-header {
+    position: relative;
+}
+
+.pre-header__title {
+    color:#FFF;
+    font-family: Arial;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px; /* 110% */
+    text-transform: uppercase;
+}
+
+.pre-header__text {
+    margin-top: 14px;
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 140% */
+}
+
+.pre-header__btn {
+    margin-top: 40px;
+    padding: 15px 31px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.2px; /* 140% */
+    text-transform: uppercase;
+}
+
+.pre-header__form-field {
+    position: absolute;
+    border: none;
+    top: 85px;
+    right: 30px;
+}
+
+.pre-header__form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+}
+
+.pre-header__form h2 {
+    margin-bottom: -5px;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 140% */
+}
+
+.pre-header__form-input {
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 13px 15px;
+    width: 415px;
+}
+
+.pre-header__form-input-submit {
+    padding: 14px 30px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    background-color: #17BED2;
+    border: none;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.2px; /* 140% */
+    text-transform: uppercase;
+}
+
+.pre-header__form-input-submit:hover {
+    box-shadow: 3px 3px 5px #5e5e5e;
+    transition: all 0.3s;
+}
+
+.pre-header__btn:hover {
+    box-shadow: 3px 3px 5px #5e5e5e;
+    transition: all 0.3s;
+}
+
+.back__img {
+    position: absolute;
+    z-index: -1;
+    left: -32%;
+    top: -120px;
+    pointer-events: none;
+}
