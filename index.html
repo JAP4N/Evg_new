@@ -1,47 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Горизонт</title>
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
     <header class="header content-section">
-        <p class="header__title">
-            Горизонт
-        </p>
-        <ul class="header__list">
-            <li class="header__list-item">Главная</li>
-            <li class="header__list-item">Цены</li>
-            <li class="header__list-item">О нас</li>
-            <li class="header__list-item">Продукты</li>
-            <li class="header__list-item">FAQ</li>
-            <li class="header__list-item">Контакты</li>
-        </ul>
+      <p class="header__title">Горизонт</p>
+      <ul class="header__list">
+        <li class="header__list-item">Главная</li>
+        <li class="header__list-item">Цены</li>
+        <li class="header__list-item">О нас</li>
+        <li class="header__list-item">Продукты</li>
+        <li class="header__list-item">FAQ</li>
+        <li class="header__list-item">Контакты</li>
+      </ul>
     </header>
     <main>
-        <section class="pre-header content-section">
-            <div class="back__img"><img src="/img/header.jpg" alt=""></div>
-            <h1 class="pre-header__title">Hi-Tech Дизайн</h1>
-            <p class="pre-header__text">
-                Частная архитектура Hi-Tech пользуется большой популярностью<br>
-                среди молодых и состоятельных людей. Дизайн внутренних помещений в<br>
-                хай-тек стиле сосредоточен на внедрении высоких технологий и<br>
-                новинок бытовой техники в жизнь владельца.
-            </p>
-            <button class="pre-header__btn">Исследовать</button>
-            <fieldset class="pre-header__form-field">
-                <form class="pre-header__form" action="">
-                    <h2>Связаться с нами</h2>
-                    <input class="pre-header__form-input" type="text" placeholder="Имя">
-                    <input class="pre-header__form-input" type="email" placeholder="Email">
-                    <input class="pre-header__form-input" type="text-area" placeholder="Сообщение">
-                    <input class="pre-header__form-input-submit" type="submit" name="submit" value="Отправить">
-                </form>
-            </fieldset>
-        </section>
+      <section class="pre-header content-section">
+        <div class="back__img"><img src="/img/header.jpg" alt="" /></div>
+        <h1 class="pre-header__title">Hi-Tech Дизайн</h1>
+        <p class="pre-header__text">
+          Частная архитектура Hi-Tech пользуется большой популярностью<br />
+          среди молодых и состоятельных людей. Дизайн внутренних помещений в<br />
+          хай-тек стиле сосредоточен на внедрении высоких технологий и<br />
+          новинок бытовой техники в жизнь владельца.
+        </p>
+        <button class="pre-header__btn">Исследовать</button>
+        <fieldset class="pre-header__form-field">
+          <form class="pre-header__form" method="POST" action="form.php">
+            <h2>Связаться с нами</h2>
+            <input
+              class="pre-header__form-input"
+              type="text"
+              name="fname"
+              placeholder="Имя"
+            />
+            <input
+              class="pre-header__form-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <textarea
+              class="pre-header__form-input pre-header__form-input-area"
+              name="msg"
+              cols="30"
+              rows="5"
+              placeholder="Сообщение"
+            ></textarea>
+
+            <input
+              class="pre-header__form-input-submit"
+              type="submit"
+              name="submit"
+              value="Отправить"
+            />
+          </form>
+        </fieldset>
+      </section>
+      <section class="last content-section">
+        <h2 class="last__title">Последние продукты</h2>
+        <p class="last__text">
+          Дизайн зданий в Hi-Tech стиле сосредоточен на внедрении высоких
+          <br />технологий и новинок техники.
+        </p>
+        <div class="last__wrapper-card">
+          <ul class="last__card-list">
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img">
+                  <img src="/img/01-jpg.png" alt="" />
+                </div>
+                <h3 class="last__card_title">Треугольная крыша</h3>
+                <p class="last__card_text">
+                  Здание Hi-Tech с двускатной крышей
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img">
+                  <img src="/img/02-jpg-1.png" alt="" />
+                </div>
+                <h3 class="last__card_title">Изогнутые углы</h3>
+                <p class="last__card_text">
+                  Мягкие формы подходят для широкого ряда интерьерных стилей.
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img">
+                  <img src="/img/03-jpg-1.png" alt="" />
+                </div>
+                <h3 class="last__card_title">Птица на зеленом</h3>
+                <p class="last__card_text">
+                  Ландшафт в стиле Hi-Tech – свобода, практичность и
+                  динамичность, а также лаконичность и простота геометрических
+                  форм
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team content-section">
+        <h2 class="team__title">Познакомьтесь с командой</h2>
+        <div class="last__wrapper-card">
+          <ul class="last__card-list">
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img last__card-img_teame">
+                  <img src="/img/01-jpg-1.png" alt="" />
+                </div>
+                <h3 class=" last__card_title-manager">Алиса кейс</h3>
+                <p class="last__card_text">
+                  В компании Asentus, менеджер проектов Алиса <br>отвечает за
+                  разработку и внедрение новых <br>технологий и решений, которые
+                  помогут улучшить <br>процесс проектирования и строительства
+                  зданий.
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img last__card-img_teame">
+                  <img src="/img/02-jpg.png" alt="" />
+                </div>
+                <h3 class=" last__card_title-architect">Дмитрий Мильнев</h3>
+                <p class="last__card_text">
+                  Дмитрий руководить командой архитекторов и <br>инженеров,
+                  разрабатывает стратегии развития <br>компании и контролирует
+                  качество проектов.
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+            <li class="last__card-list_item">
+              <a class="last__card_link" href="#">
+                <div class="last__card-img last__card-img_teame">
+                  <img src="/img/03-jpg.png" alt="" />
+                </div>
+                <h3 class=" last__card_title-designer">Александра Миненкова</h3>
+                <p class="last__card_text">
+                  Александра, как дизайнер в архитектурной <br>компании Asentus,
+                  занимается разработкой и <br>реализацией визуальных концепций и
+                  дизайном проектов
+                </p>
+                <a class="last__card_btn" href="#">Подробнее</a>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

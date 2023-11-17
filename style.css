@@ -7,13 +7,14 @@
     text-transform: uppercase;
 }
 .header__title {
+    color:  #FFF;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 110% */
+    text-transform:capitalize;
     align-self: center;
-    margin-bottom: -1px;
-    transition: all 0.7s;
-}
-
-.header__title:hover {
-    border-bottom: 1px solid #5e5e5e;
 }
 
 .header__list {
@@ -25,6 +26,7 @@
 
 .pre-header {
     position: relative;
+    padding: 278px 0 275px;
 }
 
 .pre-header__title {
@@ -60,13 +62,25 @@
     font-weight: 700;
     line-height: 18.2px; /* 140% */
     text-transform: uppercase;
+    border-radius: 30px;
 }
 
 .pre-header__form-field {
     position: absolute;
     border: none;
-    top: 85px;
-    right: 30px;
+    top: 345px;
+    right: 10px;
+}
+
+.pre-header__form-field::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 346px;
+    background-color: #fff;
+    border-radius: 30px;
+    top: -54px;
+    left: -1px;
 }
 
 .pre-header__form {
@@ -96,6 +110,16 @@
     border: none;
     padding: 13px 15px;
     width: 415px;
+    border-radius: 30px;
+}
+
+.pre-header__form-input:focus {
+    outline: none;
+}
+
+.pre-header__form-input:focus-visible {
+    outline: 1px solid #5e5e5e;
+    border-radius: 30px;
 }
 
 .pre-header__form-input-submit {
@@ -112,6 +136,7 @@
     font-weight: 700;
     line-height: 18.2px; /* 140% */
     text-transform: uppercase;
+    border-radius: 30px;
 }
 
 .pre-header__form-input-submit:hover {
@@ -129,5 +154,183 @@
     z-index: -1;
     left: -32%;
     top: -120px;
+    height: 946px;
     pointer-events: none;
+    overflow-y: hidden;
+}
+
+
+.pre-header__form-input-area {
+    resize: none;
+}
+
+.last {
+    padding: 100px 0 100px;
+}
+
+.last__title {
+    color:  #515769;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 140% */
+    padding-left: 15px;
+}
+
+.last__text {
+    padding: 14px 0 56px 15px;
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 140% */
+}
+
+.last__card-list {
+    display: flex;
+    list-style: none;
+}
+
+.last__card-list_item {
+    width: 390px;
+    padding: 0 15px;
+}
+
+.last__card_link {
+    text-decoration: none;
+}
+
+.last__card-img {
+    display: block;
+    width: 360px;
+    height: 240px;
+}
+
+.last__card-img_teame {
+    height: 402px;
+    max-width: 360px;   
+}
+
+.last__card-img  img {
+    width: 100%;
+}
+
+.last__card_title {
+    color: #515769;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30.8px; /* 140% */
+    padding: 20px 0 15px;
+}
+
+.last__card_title::after {
+    content: "DESIGN";
+    margin-left: 25px;
+    color: #BFC1C7;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px; /* 140% */
+    text-transform: uppercase;
+}
+
+.last__card_title-manager,
+.last__card_title-architect,
+.last__card_title-designer {
+    color: #515769;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30.8px; /* 140% */
+    padding: 20px 0 15px;
+}
+
+.last__card_title-manager::after {
+    content: "Менеджер проектов";
+    margin-left: 25px;
+    color: #BFC1C7;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px; /* 140% */
+    text-transform: uppercase;
+}
+
+.last__card_title-architect::after {
+    content: "архитектор";
+    margin-left: 25px;
+    color: #BFC1C7;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px; /* 140% */
+    text-transform: uppercase;
+}
+
+.last__card_title-designer::after {
+    content: "Дизайнер";
+    margin-left: 25px;
+    color: #BFC1C7;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px; /* 140% */
+    text-transform: uppercase;
+}
+
+.last__card_text {
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 140% */
+    padding-bottom: 15px;
+}
+
+.last__card_btn {
+    position: relative;
+    color: #81848F;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.57px; /* 142.846% */
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.last__card_btn::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: -5px;
+    width: 9px;
+    height: 2px;
+    background: #17BED2;
+}
+
+.team {
+    padding: 100px 0 100px;
+}
+
+.team__title {
+    color: #515769;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 140% */
+    padding-left: 15px;
+    padding-bottom: 55px;
 }
