@@ -49,7 +49,7 @@
 
 .pre-header {
     position: relative;
-    padding: 278px 0 275px;
+    padding: 201px 0 275px;
 }
 
 .pre-header__title {
@@ -92,7 +92,7 @@
 .pre-header__form-field {
     position: absolute;
     border: none;
-    top: 345px;
+    top: 267px;
     right: 10px;
 }
 
@@ -229,6 +229,10 @@ input[type='radio']:checked + span {
     height: 492px;
 }
 
+.price__item_professional {
+    padding: 70px 30px;
+}
+
 .price__item-card {
     height: 100%;
     display: flex;
@@ -355,7 +359,7 @@ input[type='radio']:checked + span {
     z-index: -1;
     left: -32%;
     top: -120px;
-    height: 1020px;
+    height: 950px;
     pointer-events: none;
     overflow-y: hidden;
 }
