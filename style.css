@@ -1,3 +1,13 @@
+.visually-hidden {
+    clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+    width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+} 
+
 .header {
     height: 95px;
     display: flex;
@@ -8,11 +18,13 @@
 }
 .header__title {
     color:  #FFF;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1; /* 110% */
+    font-family: "Inter", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: 55px;
+    white-space: nowrap;
     text-transform:capitalize;
     align-self: center;
 }
@@ -88,7 +100,7 @@
     content: "";
     position: absolute;
     width: 3px;
-    height: 346px;
+    height: 580px;
     background-color: #fff;
     border-radius: 30px;
     top: -54px;
@@ -134,6 +146,182 @@
     border-radius: 30px;
 }
 
+.form__program__title {
+    width: 445px;
+    text-align: center;
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.form__program-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form__label {
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    width: fit-content;
+    text-align: center;
+}
+
+.form__program-wrapper {
+    margin-top: 15px;
+}
+
+label span {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type='radio'] + span {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+input[type='radio']:checked + span {
+    background-color: rgba(0, 0, 0, 0.15);
+    outline: 2px solid #757575;
+    outline-offset: -2px;
+}
+
+.form__program_two {
+    margin-top: 20px;
+}
+
+.price {
+    padding: 0 0 100px;
+}
+
+.price__title {
+    color: #5E5E5E;
+    font-family: Arial;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1; /* 110% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.price__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.price__item {
+    box-sizing: border-box;
+    padding: 70px 45px;
+    width: 379px;
+    height: 492px;
+}
+
+.price__item-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price__img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.price__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.price__item-card_block h3 {
+    color: #515769;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4; /* 140% */
+}
+
+.price__item-card_block p {
+    color: #A6A7AA;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4; /* 140% */
+}
+
+.price__item-card_block-1,
+.price__item-card_block-3,
+.price__item-card_block-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.price__item-card_block_list {
+    list-style: none;
+    color: #81848F;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.price__item-card_block_list_dash {
+    position: relative;
+    padding-left: 20px;
+}
+
+.price__item-card_block_list_dash::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    height: 2px;
+    width: 9px;
+    background-color: #17BED2;
+}
+
+.price__item-card_btn {
+    width: 120px;
+    height: 48px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: Arial;
+    background: #F3F4F5;
+    border: none;
+    color: #515769;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4; /* 140% */
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.price__item-card_btn:hover {
+    box-shadow: 3px 3px 5px #5e5e5e;
+    transition: all 0.3s;
+}
+
 .pre-header__form-input-submit {
     padding: 14px 30px;
     width: 110px;
@@ -167,7 +355,7 @@
     z-index: -1;
     left: -32%;
     top: -120px;
-    height: 946px;
+    height: 1020px;
     pointer-events: none;
     overflow-y: hidden;
 }
@@ -178,7 +366,7 @@
 }
 
 .last {
-    padding: 100px 0 100px;
+    padding: 130px 0 100px;
 }
 
 .last__title {
@@ -334,7 +522,7 @@
 }
 
 .team {
-    padding: 100px 0 100px;
+    padding: 0 0 100px;
 }
 
 .team__title {

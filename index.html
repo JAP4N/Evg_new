@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,9 +21,8 @@
       <p class="header__title">Горизонт</p>
       <ul class="header__list">
         <li class="header__list-item"><a href="#">Главная</a></li>
-        <li class="header__list-item"><a href="#">Цены</a></li>
+        <li class="header__list-item"><a href="/Цены/index.html">Продукты</a></li>
         <li class="header__list-item"><a href="#">О нас</a></li>
-        <li class="header__list-item"><a href="#">Продукты</a></li>
         <li class="header__list-item"><a href="#">FAQ</a></li>
         <li class="header__list-item"><a href="#">Контакты</a></li>
       </ul>
@@ -47,24 +46,59 @@
               type="text"
               name="fname"
               placeholder="Имя"
+              required
             />
             <input
               class="pre-header__form-input"
               type="email"
               name="email"
               placeholder="Email"
+              required
             />
+            <div class="form__program">
+              <h3 class="form__program__title">Какое количество членов семьи собирается проживать в квартире или доме?</h3>
+              <div class="form__program-wrapper">
+              <label class="form__label form__label--radio" for="weight-loss">
+              <input class="visually-hidden form__radio" id="weight-loss" type="radio" name="program_1" value="1">
+              <span></span>
+              1</label>
+              <label class="form__label form__label--radio" for="weight-gain">
+              <input class="visually-hidden form__radio" id="weight-gain" type="radio" name="program_1" value="2">
+              <span></span>
+              2-4</label>
+              <label class="form__label form__label--radio" for="advice">
+              <input class="visually-hidden form__radio" id="advice" type="radio" name="program_1" value="3">
+              <span></span>
+              Больше 5</label>
+              </div>
+            </div>
+            <div class="form__program form__program_two">
+              <h3 class="form__program__title">Сколько комнат в вашей квартире(доме)?</h3>
+              <div class="form__program-wrapper">
+              <label class="form__label form__label--radio" for="weight-loss_2">
+              <input class="visually-hidden form__radio_2" id="weight-loss_2" type="radio" name="program_2" value="1">
+              <span></span>
+              1</label>
+              <label class="form__label form__label--radio" for="weight-gain_2">
+              <input class="visually-hidden form__radio_2" id="weight-gain_2" type="radio" name="program_2" value="2">
+              <span></span>
+              2-4</label>
+              <label class="form__label form__label--radio" for="advice_2">
+              <input class="visually-hidden form__radio_2" id="advice_2" type="radio" name="program_2" value="3">
+              <span></span>
+              Больше 5</label>
+              </div>
+            </div>
             <textarea
               class="pre-header__form-input pre-header__form-input-area"
               name="msg"
               cols="30"
-              rows="5"
+              rows="3"
               placeholder="Сообщение"
             ></textarea>
-
             <input
               class="pre-header__form-input-submit"
-              type="submit"
+              type="submit" 
               name="submit"
               value="Отправить"
             />
@@ -169,6 +203,62 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="price content-section">
+        <h2 class="price__title">Доступные Пакеты</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <article class="price__item-card">
+              <div class="price__item-card_block price__item-card_block-1">
+                <div class="price__img"><img src="/img/Glass.svg" alt=""></div>
+                <h3>Стартовый набор ₽ 4990</h3>
+                <p>Включает в себя стандартный набор <br>присетов и планов.</p>
+              </div>
+              <div class="price__item-card_block price__item-card_block-2">
+                <ul class="price__item-card_block_list">
+                  <li class="price__item-card_block_list_dash">Основные присеты</li>
+                  <li class="price__item-card_block_list_dash">До 5 продуктов</li>
+                  <li class="price__item-card_block_list_dash">15 Пользовательских шаблонов</li>
+                </ul>
+              </div>
+              <button class="price__item-card_block price__item-card_btn">Выбрать</button>
+            </article>
+          </li>
+          <li class="price__item">
+            <article class="price__item-card">
+              <div class="price__item-card_block price__item-card_block-3">
+                <div class="price__img"><img src="/img/Medal.svg" alt=""></div>
+                <h3>Профессиональный ₽ 14990</h3>
+                <p>Включает в себя профессиональный <br>набор инструментов, присетов.</p>
+              </div>
+              <div class="price__item-card_block price__item-card_block-4">
+                <ul class="price__item-card_block_list">
+                  <li class="price__item-card_block_list_dash">Основные присеты</li>
+                  <li class="price__item-card_block_list_dash">До 15 продуктов</li>
+                  <li class="price__item-card_block_list_dash">30 Пользовательских шаблонов</li>
+                </ul>
+              </div>
+              <button class="price__item-card_block price__item-card_btn">Выбрать</button>
+            </article>
+          </li>
+          <li class="price__item">
+            <article class="price__item-card">
+              <div class="price__item-card_block price__item-card_block-5">
+                <div class="price__img"><img src="/img/Guard.svg" alt=""></div>
+                <h3>Продвинутый ₽  24990</h3>
+                <p>Включает в себя продвинутый набор <br>инструментов, планов и присетов. </p>
+              </div>
+              <div class="price__item-card_block price__item-card_block-6">
+                <ul class="price__item-card_block_list">
+                  <li class="price__item-card_block_list_dash">Расширенные возможности</li>
+                  <li class="price__item-card_block_list_dash">Неограниченное количество продуктов</li>
+                  <li class="price__item-card_block_list_dash">Неограниченное количество шаблонов</li>
+                </ul>
+              </div>
+              <button class="price__item-card_block price__item-card_btn">Выбрать</button>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer content-section">
